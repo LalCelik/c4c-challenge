@@ -1,7 +1,7 @@
-import express, { Express } from 'express';
+import * as express from 'express';
 import { PartnerData } from './types';
 
-const app: Express = express();
+const app: express.Express = express();
 const port = 4000;
 
 // Some partner data
