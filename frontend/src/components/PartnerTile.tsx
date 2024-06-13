@@ -1,29 +1,26 @@
-import { PartnerData } from "../types";
+import React from 'react';
+import { PartnerData } from '../types';
 import './PartnerTile.css';
 
-/*
-  A block for a single partner, containing information for them
-  along with any tools to manage said information
-*/
-
 interface PartnerTileProps {
-  partnerData: PartnerData
+  partnerData: PartnerData;
+  onDelete: (id: number) => void;
 }
 
+function PartnerTile({ partnerData, onDelete }: PartnerTileProps) {
+  const handleDeleteClick = () => {
+    //to delete based on id
+    onDelete(partnerData.id);
+  };
 
-function PartnerTile({ partnerData }: PartnerTileProps) {
   return (
     <div className="partner-tile">
-      <img className="partner-thumbnail" src='' />
-      <img className="partner-photo" src={partnerData.thumbnailUrl} alt={partnerData.name} />
-      <hr />
-      <div className="partner-info"> 
-      <h2>{partnerData.name}</h2>
-      <p>{partnerData.description}</p>
-      <p></p>
-      </div>
+      <img className="partner-thumbnail" src={partnerData.thumbnailUrl} alt={partnerData.name} />
+      <h3>{partnerData.name}</h3>
+      <p className="partner-info">{partnerData.description}</p>
+      <button className="delete-button" onClick={handleDeleteClick}>Delete</button>
     </div>
-  )
+  );
 }
 
 export default PartnerTile;

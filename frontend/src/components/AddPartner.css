@@ -1,0 +1,64 @@
+
+.partner-form {
+    width: 400px;
+    padding: 20px 20px;
+    margin: 20px auto;
+    border: 1px solid hsl(0, 0%, 24%);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: #f9f9f9;
+  }
+  
+  .form-title {
+    text-align: center;
+    font-size: 24pt;
+    padding-bottom: 25px;
+  }
+  
+  .partner-form label {
+    width: 90%;
+    margin-bottom: 15px;
+    font-size: 14pt;
+  }
+  
+  .partner-form input[type="number"],
+  .partner-form input[type="text"],
+  .partner-form input[type="url"],
+  .partner-form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .partner-form textarea {
+    resize: vertical;
+    height: 80px;
+  }
+  
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox-label input {
+    margin-left: 10px;
+  }
+  
+  .partner-form button {
+    padding: 10px 20px;
+    font-size: 16pt;
+    border: none;
+    border-radius: 4px;
+    background-color: #439a46;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .partner-form button:hover {
+    background-color: #4aac4f;
+  }
+  

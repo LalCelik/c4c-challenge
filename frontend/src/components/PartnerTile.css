@@ -1,4 +1,14 @@
 .partner-photo {
-    width: 300px;
-    height: 300px; 
+    width: 200px;
+    height: 200px; 
+  }
+
+  .delete-button {
+    background-color: #ff6961;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 2px;
   }
