@@ -1,0 +1,16 @@
+[
+    {
+      "id": 1,
+      "name": "Mock Partner 1",
+      "logoUrl": "https://example.com/logo1.png",
+      "description": "Description of Mock Partner 1",
+      "isActive": true
+    },
+    {
+      "id": 2,
+      "name": "Mock Partner 2",
+      "logoUrl": "https://example.com/logo2.png",
+      "description": "Description of Mock Partner 2",
+      "isActive": false
+    }
+]

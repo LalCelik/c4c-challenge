@@ -1,4 +1,5 @@
 import { PartnerData } from "../types";
+import './PartnerTile.css';
 
 /*
   A block for a single partner, containing information for them
@@ -9,15 +10,17 @@ interface PartnerTileProps {
   partnerData: PartnerData
 }
 
-// @ts-expect-error: This variable is currently unused. You will have to either use them or remove them (at which point you should remove this comment)
-function PartnerTile({ partnerData }: PartnerTileProps) {
 
+function PartnerTile({ partnerData }: PartnerTileProps) {
   return (
     <div className="partner-tile">
       <img className="partner-thumbnail" src='' />
+      <img className="partner-photo" src={partnerData.thumbnailUrl} alt={partnerData.name} />
       <hr />
-      <div className="partner-info">
-        This is some placeholder content - you'll need to replace the content here with actual partner information.
+      <div className="partner-info"> 
+      <h2>{partnerData.name}</h2>
+      <p>{partnerData.description}</p>
+      <p></p>
       </div>
     </div>
   )
